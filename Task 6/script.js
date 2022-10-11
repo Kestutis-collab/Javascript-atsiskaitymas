@@ -1,5 +1,5 @@
 /* ------------------------------ TASK 6 -----------------------------------
-Turimas "users" masyvas. 
+Turimas "users" object. 
 
 Parašykite funckijas, kurios atlikas nurodytas užduotis:
 1. funkcija "getUserAverageAge" - kaip argumentą priims masyvą ir duoto masyvo 
@@ -19,3 +19,22 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+function getUserAverageAge(obj){
+	let all = 0;
+	for (let i = 0; i < obj.length; i++){
+		all += obj[i].age;
+	}
+	return all / obj.length;
+}
+console.log(Math.floor(getUserAverageAge(users)));
+
+function getUsersNames(obj){
+	let names = [];
+	for (let i = 0; i < obj.length; i++){
+		names[i] = obj[i].name;
+	}
+	return names;
+}
+
+console.log(getUsersNames(users));
