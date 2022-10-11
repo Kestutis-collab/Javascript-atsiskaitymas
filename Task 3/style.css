@@ -59,3 +59,14 @@
   border-radius: 5px;
   background-color: #fff;
 }
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    background-color: white;
+  }
+img{
+  width: 100%;
+}
+.btn-container #btn{
+  background-color: blue;
+}
+}
