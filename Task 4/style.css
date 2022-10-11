@@ -27,3 +27,25 @@
   margin-top: 50px;
   color: #333;
 }
+div{
+  border: 1px solid black;
+}
+.brand{
+  background-color: rgb(211, 207, 202);
+}
+.bla{
+  background-color: rgb(180, 180, 15);
+}
+@media only screen and (max-width: 768px) {
+  .bla{
+    text-align: center;
+    background-color: rgba(33, 105, 11, 0.473);
+  }
+  .brand{
+    text-align: center;
+    background-color: beige;
+  }
+  body{
+    background-color: #eee;
+  }
+  }
